@@ -1,0 +1,185 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  text-align: center;
+  background-color: #121212; /* Dark theme background */
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  transition: all 0.5s ease; /* Smooth transition for any changes */
+}
+
+/* Main Section */
+main {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 0;
+  transition: all 0.5s ease; /* Smooth transition on changes */
+}
+
+/* Header Styling */
+h1 {
+  background-color: #1E2A38; /* Dark blue */
+  width: 100%;
+  padding: 3vh 0;
+  font-size: 5vh;
+  font-weight: bold;
+  color: #F5F5F5; /* Light greyish white for contrast */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-bottom: 5px solid #ff1500; /* Modern accent color */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  margin: 0;
+  transition: all 0.3s ease;
+}
+
+h1:hover {
+  background-color: #333F55; /* Slightly lighter on hover */
+  color: #FF6F61; /* Accent color on hover */
+  transform: translateY(-5px); /* Slight lift on hover */
+}
+
+/* Video Container */
+.video-container {
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+  display: flex;
+  justify-content: center;
+  transition: all 0.5s ease;
+}
+
+#webcam {
+  width: 100vmin;
+  height: 50vmin;
+  border-radius: 5px;
+  border: 5px solid #020000; /* Accent border */
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+
+#webcam:hover {
+  transform: scale(1.05); /* Zoom effect on hover */
+}
+
+/* Scoreboard */
+.score-board {
+  display: flex;
+  justify-content: center;
+  gap: 20vmin;
+  margin-top: 5vh;
+}
+
+.card {
+  background-color: #0073ff; /* Dark blue card */
+  color: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  width: 150px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  background-color: #00174a; /* Lighter blue on hover */
+  transform: translateY(-5px); /* Slight lift on hover */
+}
+
+.card h2 {
+  margin-bottom: 10px;
+}
+
+.score-value {
+  font-size: 5vh;
+  font-weight: bold;
+}
+
+/* Message Box */
+.msg-container {
+  margin-top: 3vh;
+}
+
+#msg {
+  background-color: #FF6F61; /* Modern red */
+  color: white;
+  display: inline-block;
+  padding: 1vh;
+  font-size: 2.6vh;
+  border-radius: 1vh;
+  animation: bounceIn 1s ease; /* Bounce-in animation */
+  transition: all 0.3s ease;
+}
+
+/* Footer Styling */
+.footer {
+  background-color: #1E2A38; /* Matching header color */
+  padding: 1rem;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  margin-top: auto;
+  transition: all 0.5s ease;
+}
+
+#footer-msg {
+  font-size: 1rem;
+  color: #F5F5F5;
+}
+
+/* Button Styling */
+#nextGameBtn {
+  display: inline-block;
+  padding: 12px 28px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+#nextGameBtn:hover {
+  background: linear-gradient(135deg, #2575fc, #6a11cb);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.12);
+}
+
+#nextGameBtn:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+#nextGameBtn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(38, 132, 255, 0.5);
+}
+
+/* Bounce-in Animation */
+@keyframes bounceIn {
+  0% {
+      transform: scale(0);
+      opacity: 0;
+  }
+  60% {
+      transform: scale(1.1);
+      opacity: 1;
+  }
+  100% {
+      transform: scale(1);
+  }
+}
