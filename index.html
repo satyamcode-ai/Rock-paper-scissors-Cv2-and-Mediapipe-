@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Rock Paper Scissors</h1>
+    </header>
+
+    <!-- Main area with background image -->
+    <main style="background-image: url('sps.jpg'); 
+                 background-size: cover; 
+                 background-repeat: no-repeat; 
+                 background-position: center; 
+                 padding: 20px;">
+        <div class="score-board">
+            <div class="card ">
+                <h2>You</h2>
+                <p id="user" class="score-value">0</p>
+            </div>
+            <div class="card">
+                <h2>Computer</h2>
+                <p id="comp" class="score-value">0</p>
+            </div>
+        </div>
+
+        <div class="msg-container">
+            <p id="msg">Pick Your Move</p>
+        </div>
+
+        <div class="video-container">
+            <video id="webcam" autoplay playsinline></video>
+        </div>
+
+        <!-- Add Next Game button -->
+        <button id="nextGameBtn" class="next-game-btn">Next Game</button>
+
+    </main>
+
+    <footer class="footer">
+        <p id="footer-msg">© 2024 Rock Paper Scissors Game</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
